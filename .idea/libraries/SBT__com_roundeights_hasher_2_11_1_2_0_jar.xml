@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: com.roundeights:hasher_2.11:1.2.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/local/com.roundeights/hasher_2.11/1.2.0/jars/hasher_2.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/local/com.roundeights/hasher_2.11/1.2.0/srcs/hasher_2.11-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

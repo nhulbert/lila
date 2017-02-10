@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: io.kamon:kamon-influxdb_2.11:0.6.4.2-LILA:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/local/io.kamon/kamon-influxdb_2.11/0.6.4.2-LILA/jars/kamon-influxdb_2.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/local/io.kamon/kamon-influxdb_2.11/0.6.4.2-LILA/srcs/kamon-influxdb_2.11-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

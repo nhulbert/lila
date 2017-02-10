@@ -1,0 +1,2098 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cf18f95f-2767-43d0-8eb7-02ef295c916e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/chess" afterPath="$PROJECT_DIR$/modules/chess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templating/SetupHelper.scala" afterPath="$PROJECT_DIR$/app/templating/SetupHelper.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/round/player.scala.html" afterPath="$PROJECT_DIR$/app/views/round/player.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/chess/.gitignore" afterPath="$PROJECT_DIR$/modules/chess/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/chess/src/main/scala/variant/Variant.scala" afterPath="$PROJECT_DIR$/modules/chess/src/main/scala/variant/Variant.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/game/src/main/Event.scala" afterPath="$PROJECT_DIR$/modules/game/src/main/Event.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/game/src/main/Game.scala" afterPath="$PROJECT_DIR$/modules/game/src/main/Game.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/round/src/main/GameProxy.scala" afterPath="$PROJECT_DIR$/modules/round/src/main/GameProxy.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/round/src/main/Player.scala" afterPath="$PROJECT_DIR$/modules/round/src/main/Player.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/round/src/main/Round.scala" afterPath="$PROJECT_DIR$/modules/round/src/main/Round.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/round/src/main/SocketHandler.scala" afterPath="$PROJECT_DIR$/modules/round/src/main/SocketHandler.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/round/src/main/actorApi.scala" afterPath="$PROJECT_DIR$/modules/round/src/main/actorApi.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/setup/src/main/Config.scala" afterPath="$PROJECT_DIR$/modules/setup/src/main/Config.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/setup/src/main/FilterConfig.scala" afterPath="$PROJECT_DIR$/modules/setup/src/main/FilterConfig.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/socket/src/main/MoveBroadcast.scala" afterPath="$PROJECT_DIR$/modules/socket/src/main/MoveBroadcast.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/socket/src/main/WithSocket.scala" afterPath="$PROJECT_DIR$/modules/socket/src/main/WithSocket.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/main.js" afterPath="$PROJECT_DIR$/public/javascripts/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/piece/letter/bB.svg" afterPath="$PROJECT_DIR$/public/piece/letter/bB.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/piece/letter/bK.svg" afterPath="$PROJECT_DIR$/public/piece/letter/bK.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/piece/letter/bN.svg" afterPath="$PROJECT_DIR$/public/piece/letter/bN.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/piece/letter/bQ.svg" afterPath="$PROJECT_DIR$/public/piece/letter/bQ.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/piece/letter/bR.svg" afterPath="$PROJECT_DIR$/public/piece/letter/bR.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/piece/letter/wB.svg" afterPath="$PROJECT_DIR$/public/piece/letter/wB.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/piece/letter/wK.svg" afterPath="$PROJECT_DIR$/public/piece/letter/wK.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/piece/letter/wN.svg" afterPath="$PROJECT_DIR$/public/piece/letter/wN.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/piece/letter/wQ.svg" afterPath="$PROJECT_DIR$/public/piece/letter/wQ.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/piece/letter/wR.svg" afterPath="$PROJECT_DIR$/public/piece/letter/wR.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/build" afterPath="$PROJECT_DIR$/ui/build" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/lobby/src/legacy.js" afterPath="$PROJECT_DIR$/ui/lobby/src/legacy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/lobby/src/variant.js" afterPath="$PROJECT_DIR$/ui/lobby/src/variant.js" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/resolution-cache/" />
+    <ignored path="$PROJECT_DIR$/target/streams/" />
+    <ignored path="$PROJECT_DIR$/modules/analyse/target/" />
+    <ignored path="$PROJECT_DIR$/modules/api/target/" />
+    <ignored path="$PROJECT_DIR$/modules/blog/target/" />
+    <ignored path="$PROJECT_DIR$/modules/bookmark/target/" />
+    <ignored path="$PROJECT_DIR$/modules/challenge/target/" />
+    <ignored path="$PROJECT_DIR$/modules/chat/target/" />
+    <ignored path="$PROJECT_DIR$/modules/chess/target/" />
+    <ignored path="$PROJECT_DIR$/modules/coach/target/" />
+    <ignored path="$PROJECT_DIR$/modules/common/target/" />
+    <ignored path="$PROJECT_DIR$/modules/coordinate/target/" />
+    <ignored path="$PROJECT_DIR$/modules/db/target/" />
+    <ignored path="$PROJECT_DIR$/modules/evaluation/target/" />
+    <ignored path="$PROJECT_DIR$/modules/event/target/" />
+    <ignored path="$PROJECT_DIR$/modules/explorer/target/" />
+    <ignored path="$PROJECT_DIR$/modules/fishnet/target/" />
+    <ignored path="$PROJECT_DIR$/modules/forum/target/" />
+    <ignored path="$PROJECT_DIR$/modules/forumSearch/target/" />
+    <ignored path="$PROJECT_DIR$/modules/game/target/" />
+    <ignored path="$PROJECT_DIR$/modules/gameSearch/target/" />
+    <ignored path="$PROJECT_DIR$/modules/history/target/" />
+    <ignored path="$PROJECT_DIR$/modules/hub/target/" />
+    <ignored path="$PROJECT_DIR$/modules/i18n/target/resolution-cache/" />
+    <ignored path="$PROJECT_DIR$/modules/i18n/target/streams/" />
+    <ignored path="$PROJECT_DIR$/modules/importer/target/" />
+    <ignored path="$PROJECT_DIR$/modules/insight/target/" />
+    <ignored path="$PROJECT_DIR$/modules/learn/target/" />
+    <ignored path="$PROJECT_DIR$/modules/lobby/target/" />
+    <ignored path="$PROJECT_DIR$/modules/memo/target/" />
+    <ignored path="$PROJECT_DIR$/modules/message/target/" />
+    <ignored path="$PROJECT_DIR$/modules/mod/target/" />
+    <ignored path="$PROJECT_DIR$/modules/notify/target/" />
+    <ignored path="$PROJECT_DIR$/modules/perfStat/target/" />
+    <ignored path="$PROJECT_DIR$/modules/plan/target/" />
+    <ignored path="$PROJECT_DIR$/modules/playban/target/" />
+    <ignored path="$PROJECT_DIR$/modules/pool/target/" />
+    <ignored path="$PROJECT_DIR$/modules/pref/target/" />
+    <ignored path="$PROJECT_DIR$/modules/push/target/" />
+    <ignored path="$PROJECT_DIR$/modules/puzzle/target/" />
+    <ignored path="$PROJECT_DIR$/modules/qa/target/" />
+    <ignored path="$PROJECT_DIR$/modules/quote/target/" />
+    <ignored path="$PROJECT_DIR$/modules/rating/target/" />
+    <ignored path="$PROJECT_DIR$/modules/relation/target/" />
+    <ignored path="$PROJECT_DIR$/modules/report/target/" />
+    <ignored path="$PROJECT_DIR$/modules/round/target/" />
+    <ignored path="$PROJECT_DIR$/modules/search/target/" />
+    <ignored path="$PROJECT_DIR$/modules/security/target/" />
+    <ignored path="$PROJECT_DIR$/modules/setup/target/" />
+    <ignored path="$PROJECT_DIR$/modules/shutup/target/" />
+    <ignored path="$PROJECT_DIR$/modules/simul/target/" />
+    <ignored path="$PROJECT_DIR$/modules/site/target/" />
+    <ignored path="$PROJECT_DIR$/modules/slack/target/" />
+    <ignored path="$PROJECT_DIR$/modules/socket/target/" />
+    <ignored path="$PROJECT_DIR$/modules/study/target/" />
+    <ignored path="$PROJECT_DIR$/modules/studySearch/target/" />
+    <ignored path="$PROJECT_DIR$/modules/team/target/" />
+    <ignored path="$PROJECT_DIR$/modules/teamSearch/target/" />
+    <ignored path="$PROJECT_DIR$/modules/timeline/target/" />
+    <ignored path="$PROJECT_DIR$/modules/tournament/target/" />
+    <ignored path="$PROJECT_DIR$/modules/tree/target/" />
+    <ignored path="$PROJECT_DIR$/modules/tv/target/" />
+    <ignored path="$PROJECT_DIR$/modules/user/target/" />
+    <ignored path="$PROJECT_DIR$/modules/video/target/" />
+    <ignored path="$PROJECT_DIR$/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/analyse/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/analyse/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/api/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/api/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/blog/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/blog/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/bookmark/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/bookmark/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/challenge/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/challenge/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/chat/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/chat/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/chess/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/chess/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/coach/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/coach/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/common/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/common/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/coordinate/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/coordinate/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/db/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/db/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/evaluation/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/evaluation/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/event/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/event/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/explorer/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/explorer/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/fishnet/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/fishnet/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/forum/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/forum/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/forumSearch/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/forumSearch/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/game/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/game/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/gameSearch/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/gameSearch/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/history/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/history/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/hub/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/hub/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/i18n/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/i18n/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/importer/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/importer/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/insight/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/insight/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/learn/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/learn/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/lobby/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/lobby/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/memo/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/memo/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/message/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/message/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/mod/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/mod/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/notify/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/notify/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/perfStat/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/perfStat/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/plan/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/plan/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/playban/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/playban/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/pool/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/pool/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/pref/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/pref/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/push/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/push/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/puzzle/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/puzzle/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/qa/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/qa/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/quote/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/quote/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/rating/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/rating/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/relation/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/relation/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/report/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/report/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/round/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/round/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/search/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/search/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/security/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/security/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/setup/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/setup/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/shutup/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/shutup/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/simul/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/simul/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/site/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/site/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/slack/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/slack/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/socket/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/socket/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/study/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/study/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/studySearch/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/studySearch/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/team/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/team/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/teamSearch/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/teamSearch/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/timeline/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/timeline/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/tournament/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/tournament/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/tree/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/tree/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/tv/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/tv/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/user/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/user/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/video/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/video/project/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="lila" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="FilterConfig.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/setup/src/main/FilterConfig.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+              <folding>
+                <element signature="e#20#48#0" expanded="false" />
+                <element signature="e#1579#1606#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/round/src/main/Player.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="121" column="12" lean-forward="false" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
+              <folding>
+                <element signature="e#20#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/game/src/main/Game.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="264" column="10" lean-forward="false" selection-start-line="264" selection-start-column="10" selection-end-line="264" selection-end-column="10" />
+              <folding>
+                <element signature="e#19#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Event.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/game/src/main/Event.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SocketHandler.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/round/src/main/SocketHandler.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="81" column="9" lean-forward="false" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Round.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/round/src/main/Round.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="77" column="22" lean-forward="false" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/Game.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+              <folding>
+                <element signature="e#15#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Clock.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/Clock.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="104" column="18" lean-forward="false" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Situation.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/Situation.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="51" column="75" lean-forward="false" selection-start-line="51" selection-start-column="75" selection-end-line="51" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Move.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/Move.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>flickFinish</find>
+      <find>round</find>
+      <find>startRound</find>
+      <find>stringify</find>
+      <find>JsObject</find>
+      <find>some</find>
+      <find>some(</find>
+      <find>match</find>
+      <find>biteSeek</find>
+      <find>msg</find>
+      <find>variant.id</find>
+      <find>KnipseSjakk</find>
+      <find>filter</find>
+      <find>variant</find>
+      <find>notifyFlick</find>
+      <find>parseMove</find>
+      <find>updateFlick</find>
+      <find>update(</find>
+      <find>step</find>
+      <find>clock</find>
+      <find>turns - startedAtTurn</find>
+      <find>HumanFlick</find>
+      <find>step l</find>
+      <find>parseFlick</find>
+      <find>applyClock</find>
+      <find>updateFlick(</find>
+      <find>applyFlick</find>
+      <find>&quot;clock&quot; -&gt;</find>
+      <find>startedAtTurn</find>
+      <find>Flick</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/modules/push/src/main/Env.scala" />
+        <option value="$PROJECT_DIR$/modules/socket/src/main/Handler.scala" />
+        <option value="$PROJECT_DIR$/modules/common/src/main/Bus.scala" />
+        <option value="$PROJECT_DIR$/modules/socket/src/main/MoveBroadcast.scala" />
+        <option value="$PROJECT_DIR$/modules/socket/src/main/WithSocket.scala" />
+        <option value="$PROJECT_DIR$/modules/round/src/main/SocketHandler.scala" />
+        <option value="$PROJECT_DIR$/modules/round/src/main/actorApi.scala" />
+        <option value="$PROJECT_DIR$/app/views/round/player.scala.html" />
+        <option value="$PROJECT_DIR$/modules/chess/src/main/scala/variant/KnipseSjakk.scala" />
+        <option value="$PROJECT_DIR$/modules/game/src/main/BSONHandlers.scala" />
+        <option value="$PROJECT_DIR$/modules/setup/src/main/Config.scala" />
+        <option value="$PROJECT_DIR$/modules/chess/src/main/scala/variant/Variant.scala" />
+        <option value="$PROJECT_DIR$/modules/setup/src/main/FilterConfig.scala" />
+        <option value="$PROJECT_DIR$/modules/round/src/main/Player.scala" />
+        <option value="$PROJECT_DIR$/modules/game/src/main/Event.scala" />
+        <option value="$PROJECT_DIR$/modules/game/src/main/Game.scala" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1301" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="setup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="setup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="round" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="round" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="round" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="round" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Round.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lila" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="debugger.hotswap" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.21165049" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="scala.variant" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Remote.Unnamed">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="lila" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SbtRunConfiguration" factoryName="SBT Task">
+      <setting name="tasks" value="" />
+      <setting name="vmparams" value="-Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unnamed" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="127.0.0.1" />
+      <option name="PORT" value="5005" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="Run" type="SbtRunConfiguration" factoryName="SBT Task">
+      <setting name="tasks" value="run" />
+      <setting name="vmparams" value="-Xms64M -Xmx2048M -Xss4M -XX:ReservedCodeCacheSize=64m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Remote.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="SBT Task.Run" />
+    </list>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="lastUpdateTimestamp" value="1484643437710" />
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="lila" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="lila" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="analyse" />
+                <option name="path" value="$PROJECT_DIR$/modules/analyse" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="api" />
+                <option name="path" value="$PROJECT_DIR$/modules/api" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="blog" />
+                <option name="path" value="$PROJECT_DIR$/modules/blog" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="bookmark" />
+                <option name="path" value="$PROJECT_DIR$/modules/bookmark" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="challenge" />
+                <option name="path" value="$PROJECT_DIR$/modules/challenge" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="chat" />
+                <option name="path" value="$PROJECT_DIR$/modules/chat" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="chess" />
+                <option name="path" value="$PROJECT_DIR$/modules/chess" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="coach" />
+                <option name="path" value="$PROJECT_DIR$/modules/coach" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="common" />
+                <option name="path" value="$PROJECT_DIR$/modules/common" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="coordinate" />
+                <option name="path" value="$PROJECT_DIR$/modules/coordinate" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="db" />
+                <option name="path" value="$PROJECT_DIR$/modules/db" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="evaluation" />
+                <option name="path" value="$PROJECT_DIR$/modules/evaluation" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="event" />
+                <option name="path" value="$PROJECT_DIR$/modules/event" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="explorer" />
+                <option name="path" value="$PROJECT_DIR$/modules/explorer" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="fishnet" />
+                <option name="path" value="$PROJECT_DIR$/modules/fishnet" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="forum" />
+                <option name="path" value="$PROJECT_DIR$/modules/forum" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="forumSearch" />
+                <option name="path" value="$PROJECT_DIR$/modules/forumSearch" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="game" />
+                <option name="path" value="$PROJECT_DIR$/modules/game" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="gameSearch" />
+                <option name="path" value="$PROJECT_DIR$/modules/gameSearch" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="history" />
+                <option name="path" value="$PROJECT_DIR$/modules/history" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="hub" />
+                <option name="path" value="$PROJECT_DIR$/modules/hub" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="i18n" />
+                <option name="path" value="$PROJECT_DIR$/modules/i18n" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="importer" />
+                <option name="path" value="$PROJECT_DIR$/modules/importer" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="insight" />
+                <option name="path" value="$PROJECT_DIR$/modules/insight" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="learn" />
+                <option name="path" value="$PROJECT_DIR$/modules/learn" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="lobby" />
+                <option name="path" value="$PROJECT_DIR$/modules/lobby" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="memo" />
+                <option name="path" value="$PROJECT_DIR$/modules/memo" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="message" />
+                <option name="path" value="$PROJECT_DIR$/modules/message" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="mod" />
+                <option name="path" value="$PROJECT_DIR$/modules/mod" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="notify" />
+                <option name="path" value="$PROJECT_DIR$/modules/notify" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="perfStat" />
+                <option name="path" value="$PROJECT_DIR$/modules/perfStat" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="plan" />
+                <option name="path" value="$PROJECT_DIR$/modules/plan" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="playban" />
+                <option name="path" value="$PROJECT_DIR$/modules/playban" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="pool" />
+                <option name="path" value="$PROJECT_DIR$/modules/pool" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="pref" />
+                <option name="path" value="$PROJECT_DIR$/modules/pref" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="push" />
+                <option name="path" value="$PROJECT_DIR$/modules/push" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="puzzle" />
+                <option name="path" value="$PROJECT_DIR$/modules/puzzle" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="qa" />
+                <option name="path" value="$PROJECT_DIR$/modules/qa" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="quote" />
+                <option name="path" value="$PROJECT_DIR$/modules/quote" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="rating" />
+                <option name="path" value="$PROJECT_DIR$/modules/rating" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="relation" />
+                <option name="path" value="$PROJECT_DIR$/modules/relation" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="report" />
+                <option name="path" value="$PROJECT_DIR$/modules/report" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="round" />
+                <option name="path" value="$PROJECT_DIR$/modules/round" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="search" />
+                <option name="path" value="$PROJECT_DIR$/modules/search" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="security" />
+                <option name="path" value="$PROJECT_DIR$/modules/security" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="setup" />
+                <option name="path" value="$PROJECT_DIR$/modules/setup" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="shutup" />
+                <option name="path" value="$PROJECT_DIR$/modules/shutup" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="simul" />
+                <option name="path" value="$PROJECT_DIR$/modules/simul" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="site" />
+                <option name="path" value="$PROJECT_DIR$/modules/site" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="slack" />
+                <option name="path" value="$PROJECT_DIR$/modules/slack" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="socket" />
+                <option name="path" value="$PROJECT_DIR$/modules/socket" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="study" />
+                <option name="path" value="$PROJECT_DIR$/modules/study" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="studySearch" />
+                <option name="path" value="$PROJECT_DIR$/modules/studySearch" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="team" />
+                <option name="path" value="$PROJECT_DIR$/modules/team" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="teamSearch" />
+                <option name="path" value="$PROJECT_DIR$/modules/teamSearch" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="timeline" />
+                <option name="path" value="$PROJECT_DIR$/modules/timeline" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="tournament" />
+                <option name="path" value="$PROJECT_DIR$/modules/tournament" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="tree" />
+                <option name="path" value="$PROJECT_DIR$/modules/tree" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="tv" />
+                <option name="path" value="$PROJECT_DIR$/modules/tv" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="user" />
+                <option name="path" value="$PROJECT_DIR$/modules/user" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="video" />
+                <option name="path" value="$PROJECT_DIR$/modules/video" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="lila-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="analyse-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/analyse/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="api-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/api/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="blog-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/blog/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="bookmark-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/bookmark/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="challenge-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/challenge/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="chat-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/chat/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="chess-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/chess/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="coach-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/coach/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="common-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/common/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="coordinate-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/coordinate/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="db-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/db/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="evaluation-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/evaluation/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="event-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/event/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="explorer-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/explorer/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="fishnet-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/fishnet/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="forum-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/forum/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="forumSearch-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/forumSearch/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="game-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/game/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="gameSearch-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/gameSearch/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="history-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/history/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="hub-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/hub/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="i18n-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/i18n/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="importer-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/importer/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="insight-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/insight/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="learn-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/learn/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="lobby-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/lobby/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="memo-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/memo/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="message-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/message/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="mod-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/mod/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="notify-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/notify/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="perfStat-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/perfStat/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="plan-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/plan/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="playban-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/playban/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="pool-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/pool/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="pref-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/pref/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="push-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/push/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="puzzle-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/puzzle/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="qa-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/qa/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="quote-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/quote/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="rating-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/rating/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="relation-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/relation/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="report-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/report/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="round-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/round/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="search-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/search/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="security-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/security/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="setup-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/setup/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="shutup-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/shutup/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="simul-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/simul/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="site-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/site/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="slack-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/slack/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="socket-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/socket/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="study-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/study/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="studySearch-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/studySearch/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="team-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/team/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="teamSearch-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/teamSearch/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="timeline-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/timeline/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="tournament-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/tournament/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="tree-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/tree/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="tv-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/tv/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="user-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/user/project" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="video-build" />
+                <option name="path" value="$PROJECT_DIR$/modules/video/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="2966954336255" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf18f95f-2767-43d0-8eb7-02ef295c916e" name="Default" comment="" />
+      <created>1484643324041</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1484643324041</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49721116" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3003096" sideWeight="0.42948207" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3111455" sideWeight="0.13227092" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49402392" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49721116" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09641434" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3111455" sideWeight="0.86772907" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2987616" sideWeight="0.70916337" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34365326" sideWeight="0.24780877" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36687306" sideWeight="0.7083665" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49721116" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3003096" sideWeight="0.45498008" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49402392" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49721116" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.107569724" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34365326" sideWeight="0.75219125" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="572" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/variant/KingOfTheHill.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/variant/Atomic.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/lobby/src/main/SeekApi.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/lobby/src/main/actorApi.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/lobby/src/main/Socket.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/site/src/main/ApiSocketHandler.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/site/src/main/SocketHandler.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/socket/src/main/Handler.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-929">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.4.12-sources.jar!/akka/actor/ActorCell.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="526" column="0" lean-forward="true" selection-start-line="526" selection-start-column="0" selection-end-line="526" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.3.13-sources.jar!/akka/actor/Actor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="483" column="0" lean-forward="false" selection-start-line="483" selection-start-column="0" selection-end-line="483" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/lobby/src/main/Lobby.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="43" column="6" lean-forward="false" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/lobby/src/main/SocketHandler.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.4.12-sources.jar!/akka/dispatch/Mailbox.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="262" column="7" lean-forward="true" selection-start-line="262" selection-start-column="7" selection-end-line="262" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/lobby/src/main/HookRepo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/variant/RacingKings.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/game/src/main/BSONHandlers.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="75" column="29" lean-forward="false" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/common/src/main/Steroids.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="85" column="8" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/lobby/src/main/Hook.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="61" column="38" lean-forward="true" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/lobby/src/main/Seek.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/game/src/main/Pov.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="48" column="57" lean-forward="false" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/history/src/main/HistoryApi.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="63" column="25" lean-forward="true" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/variant/FromPosition.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/round/src/main/JsonView.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="32" column="35" lean-forward="false" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod/src/main/Boosting.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="78" column="1" lean-forward="true" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templating/GameHelper.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="166" column="25" lean-forward="false" selection-start-line="166" selection-start-column="25" selection-end-line="166" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/format/Forsyth.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="177" column="42" lean-forward="false" selection-start-line="177" selection-start-column="42" selection-end-line="177" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/round/src/main/PerfsUpdater.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/variant/KnipseSjakk.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/variant/Standard.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/variant/ThreeCheck.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/rating/src/main/PerfType.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="100" column="19" lean-forward="true" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/tv/src/main/Tv.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="92" column="30" lean-forward="false" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/variant/Variant.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2610">
+          <caret line="176" column="5" lean-forward="false" selection-start-line="176" selection-start-column="5" selection-end-line="176" selection-end-column="5" />
+          <folding>
+            <element signature="e#31#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templating/SetupHelper.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="61" column="45" lean-forward="false" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+          <folding>
+            <element signature="e#37#65#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/lobby/home.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Lobby.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="e#21#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/api/src/main/Env.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1695">
+          <caret line="119" column="13" lean-forward="false" selection-start-line="119" selection-start-column="7" selection-end-line="119" selection-end-column="13" />
+          <folding>
+            <element signature="e#18#37#0" expanded="false" />
+            <element signature="e#2088#2115#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/Hash.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="95" column="19" lean-forward="false" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/user/src/main/Perfs.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2250">
+          <caret line="154" column="17" lean-forward="false" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
+          <folding>
+            <element signature="e#19#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/setup/src/main/Config.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1545">
+          <caret line="107" column="20" lean-forward="false" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
+          <folding>
+            <element signature="e#20#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/setup/src/main/UserConfig.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding>
+            <element signature="e#20#49#0" expanded="false" />
+            <element signature="e#655#674#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/setup/src/main/FilterConfig.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+          <folding>
+            <element signature="e#20#48#0" expanded="false" />
+            <element signature="e#1579#1606#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/Clock.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="104" column="18" lean-forward="false" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/round/src/main/Round.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="77" column="22" lean-forward="false" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/Situation.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="51" column="75" lean-forward="false" selection-start-line="51" selection-start-column="75" selection-end-line="51" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/Move.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/round/src/main/SocketHandler.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="81" column="9" lean-forward="false" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/chess/src/main/scala/Game.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+          <folding>
+            <element signature="e#15#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/round/src/main/Player.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="121" column="12" lean-forward="false" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
+          <folding>
+            <element signature="e#20#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/game/src/main/Event.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/game/src/main/Game.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="264" column="10" lean-forward="false" selection-start-line="264" selection-start-column="10" selection-end-line="264" selection-end-column="10" />
+          <folding>
+            <element signature="e#19#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21165049" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21165049" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21165049" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21165049" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>security</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21165049" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>SBT: aopalliance:aopalliance:1.0:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21165049" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

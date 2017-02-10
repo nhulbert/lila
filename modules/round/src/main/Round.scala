@@ -71,6 +71,20 @@ private[round] final class Round(
         p.trace.finish()
         lila.mon.round.move.full.count()
       }
+      
+    case p: HumanFlick =>
+      p.trace.finishFirstSegment()
+      handleHumanFlick(p) { pov =>
+        if (pov.game outoftime lags.get) finisher.outOfTime(pov.game)
+        else {
+          lags.set(pov.color, p.lag.toMillis.toInt)
+          reportNetworkLag(pov)
+          player.humanFlick(p, self)(pov)
+        }
+      } >>- {
+        p.trace.finish()
+        lila.mon.round.move.full.count()
+      }
 
     case FishnetPlay(uci, currentFen) => handle { game =>
       player.fishnet(game, uci, currentFen, self)
@@ -243,6 +257,13 @@ private[round] final class Round(
       }
     }(op)
 
+  protected def handleHumanFlick(p: HumanFlick)(op: Pov => Fu[Events]): Funit =
+    handlePov {
+      p.trace.segment("fetch", "db") {
+        proxy playerPov p.playerId
+      }
+    }(op)
+    
   protected def handle(color: Color)(op: Pov => Fu[Events]): Funit =
     handlePov(proxy pov color)(op)
 

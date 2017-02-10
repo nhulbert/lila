@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="SBT 2" modules="lila,analyse,api,blog,bookmark,challenge,chat,coach,common,coordinate,db,evaluation,event,explorer,fishnet,forum,forumSearch,game,gameSearch,history,hub,i18n,importer,insight,learn,lobby,memo,message,mod,notify,perfStat,plan,playban,pool,pref,push,puzzle,qa,quote,rating,relation,report,round,search,security,setup,shutup,simul,site,slack,socket,study,studySearch,team,teamSearch,timeline,tournament,tree,tv,user,video">
+      <option name="deprecationWarnings" value="true" />
+      <option name="uncheckedWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <parameters>
+        <parameter value="-language:_" />
+        <parameter value="-Xfatal-warnings" />
+        <parameter value="-Ybackend:GenBCode" />
+        <parameter value="-Ydelambdafy:method" />
+        <parameter value="-target:jvm-1.8" />
+      </parameters>
+    </profile>
+    <profile name="SBT 3" modules="chess">
+      <option name="deprecationWarnings" value="true" />
+      <option name="uncheckedWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <parameters>
+        <parameter value="-language:_" />
+        <parameter value="-Xfatal-warnings" />
+        <parameter value="-Ybackend:GenBCode" />
+        <parameter value="-Ydelambdafy:method" />
+        <parameter value="-target:jvm-1.8" />
+        <parameter value="-language:_" />
+        <parameter value="-Xfatal-warnings" />
+        <parameter value="-Ybackend:GenBCode" />
+        <parameter value="-Ydelambdafy:method" />
+        <parameter value="-target:jvm-1.8" />
+      </parameters>
+    </profile>
+  </component>
+</project>

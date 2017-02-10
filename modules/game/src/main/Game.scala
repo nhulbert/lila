@@ -1,14 +1,16 @@
 package lila.game
 
-import chess.Color.{ White, Black }
-import chess.format.{ Uci, FEN }
-import chess.opening.{ FullOpening, FullOpeningDB }
-import chess.Pos.piotr, chess.Role.forsyth
-import chess.variant.{ Variant, Crazyhouse }
-import chess.{ History => ChessHistory, CheckCount, Castles, Role, Board, MoveOrDrop, Pos, Game => ChessGame, Clock, Status, Color, Piece, Mode, PositionHash, UnmovedRooks }
+import chess.Color.{Black, White}
+import chess.format.{FEN, Uci}
+import chess.opening.{FullOpening, FullOpeningDB}
+import chess.Pos.piotr
+import chess.Role.forsyth
+import chess.Clock
+import chess.variant.{Crazyhouse, Variant}
+import chess.{Board, Castles, CheckCount, Clock, Color, Mode, MoveOrDrop, PausedClock, Piece, Pos, PositionHash, Role, RunningClock, Status, UnmovedRooks, Game => ChessGame, History => ChessHistory}
 import org.joda.time.DateTime
-import scala.concurrent.duration.FiniteDuration
 
+import scala.concurrent.duration.FiniteDuration
 import lila.db.ByteArray
 import lila.rating.PerfType
 import lila.user.User
@@ -220,6 +222,59 @@ case class Game(
       }.toList
 
     Progress(this, updated, events)
+  }
+
+  def updateFlick(
+              updatedClock: Option[Clock],
+              updatedTurns: Int,
+              flick: (List[Int], String, Int),
+              color: String,
+              lag: Option[FiniteDuration] = None): Progress = {
+
+    def copyPlayer(player: Player) = player.copy()
+
+    val updated = copy(
+      whitePlayer = copyPlayer(whitePlayer),
+      blackPlayer = copyPlayer(blackPlayer),
+      turns = updatedTurns,
+      binaryMoveTimes = isPgnImport.fold(
+        ByteArray.empty,
+        BinaryFormat.moveTime write lastMoveTime.fold(Vector(0)) { lmt =>
+          moveTimes :+ {
+            (nowTenths - lmt - (lag.??(_.toMillis) / 100)).toInt max 0
+          }
+        }
+      ),
+      status = flick match {
+        case (_, _, 1) => Status.VariantEnd
+        case (_, _, 2) => Status.Draw
+        case (_, _, -1) => Status.VariantEnd
+        case _ => status
+      },
+      clock = updatedClock
+      /*clock match {
+        case Some(_) => clock map {
+          case c: RunningClock => lag match {
+            case Some(l) => c step l
+            case _ => c
+          }
+          case c: PausedClock if (turns - startedAtTurn) == 1 => c.start.switch
+          case c => c.switch
+        }
+        case _ => clock
+      }*/)
+
+    val clockEvent = turns match {
+      case t if t>1 =>
+        updated.clock map Event.Clock.apply orElse {
+          updated.playableCorrespondenceClock map Event.CorrespondenceClock.apply
+        }
+      case _ => None
+    }
+
+    val events = List(Event.Flick(flick, color, clockEvent))
+
+    return Progress(this, updated, events)
   }
 
   def check = castleLastMoveTime.check

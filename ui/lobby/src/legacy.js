@@ -250,6 +250,9 @@ module.exports = function(element, cfg) {
         case '9':
           key = "racingKings"
           break;
+	case '11':
+	  key = "flickChess"
+	  break;
       }
       $ratings.hide().filter('.' + key).show();
     };

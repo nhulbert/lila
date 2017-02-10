@@ -12,7 +12,7 @@ private final class GameProxy(id: String) {
     set(progress.game)
     GameRepo save progress
   }
-
+  
   def invalidating(f: GameRepo.type => Funit): Funit = f(GameRepo) >>- invalidate
 
   def bypass(f: GameRepo.type => Funit): Funit = f(GameRepo)

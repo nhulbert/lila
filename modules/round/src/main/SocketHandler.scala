@@ -34,7 +34,9 @@ private[round] final class SocketHandler(
     ref: PovRef,
     member: Member): Handler.Controller = {
 
-    def send(msg: Any) { roundMap ! Tell(gameId, msg) }
+    def send(msg: Any) {
+      roundMap ! Tell(gameId, msg)
+    }
 
     def ping(o: JsObject) =
       o int "v" foreach { v => socket ! PingVersion(uid, v) }
@@ -67,6 +69,15 @@ private[round] final class SocketHandler(
               case _: Exception => socket ! Resync(uid)
             }
             send(HumanPlay(playerId, drop, blur, lag.millis, promise.some))
+            member push ackEvent
+        }
+        case ("flick", o) => parseFlick(o) foreach {
+          case (flick, lag, color) =>
+            val promise = Promise[Unit]
+            promise.future onFailure {
+              case _: Exception => socket ! Resync(uid)
+            }
+            send(HumanFlick(playerId, flick, color, lag.millis, promise.some))
             member push ackEvent
         }
         case ("rematch-yes", _)  => send(RematchYes(playerId))
@@ -167,6 +178,14 @@ private[round] final class SocketHandler(
     drop <- Uci.Drop.fromStrings(role, pos)
     blur = d int "b" contains 1
   } yield (drop, blur, parseLag(d))
+  
+  private def parseFlick(o: JsObject) = for {
+    d ← o obj "d"
+    vel ← d ints "vel"
+    key ← d str "key"
+    win ← d int "win"
+    color ← d str "color"
+  } yield ((vel, key, win), parseLag(d), color)
 
   private def parseLag(d: JsObject): Int =
     d.int("l") orElse d.int("lag") getOrElse 0

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: com.gilt:gfc-semver_2.11:0.0.3:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.gilt/gfc-semver_2.11/jars/gfc-semver_2.11-0.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.gilt/gfc-semver_2.11/srcs/gfc-semver_2.11-0.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

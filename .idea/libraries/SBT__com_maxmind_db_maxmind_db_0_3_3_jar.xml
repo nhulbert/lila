@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: com.maxmind.db:maxmind-db:0.3.3:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.maxmind.db/maxmind-db/jars/maxmind-db-0.3.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.maxmind.db/maxmind-db/srcs/maxmind-db-0.3.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
