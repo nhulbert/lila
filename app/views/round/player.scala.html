@@ -1,11 +1,22 @@
 @(pov: Pov, data: play.api.libs.json.JsObject, tour: Option[lila.tournament.MiniStanding], simul: Option[lila.simul.Simul], cross: Option[lila.game.Crosstable], playing: List[Pov], chatOption: Option[lila.chat.Chat.Restricted], bookmarked: Boolean)(implicit ctx: Context)
 
 @import pov._
+@import lila.common.PimpedJson._
 
 @title = @{ s"${trans.play.str()} ${playerText(pov.opponent)} in $gameId" }
 
 @moreJs = {
-@jsAt(s"compiled/lichess.round${isProd??(".min")}.js")
+@{(data obj "game") match {
+        case Some(a) => (a obj "variant") match {
+            case Some(b) => (b str "key") match {
+                case Some("flickChess") => jsAt(s"compiled/lichess.flick${isProd??(".min")}.js")
+                case _ => jsAt(s"compiled/lichess.round${isProd??(".min")}.js")
+            }
+            case _ => "error"
+        }
+        case _ => "error"
+    }
+}
 @embedJs {
 $(function() {
 lichess.startRound(document.getElementById('lichess'), {

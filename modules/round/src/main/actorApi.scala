@@ -107,6 +107,16 @@ case class HumanPlay(
   val trace = lila.mon.round.move.trace.create
 }
 
+case class HumanFlick(
+    playerId: String,
+    flick: (List[Int], String, Int),
+    color: String,
+    lag: FiniteDuration,
+    promise: Option[Promise[Unit]] = None) {
+  
+  val trace = lila.mon.round.move.trace.create
+}
+
 case class PlayResult(events: Events, fen: String, lastMove: Option[String])
 
 case class Abort(playerId: String)

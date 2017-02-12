@@ -1,10 +1,12 @@
 package lila.socket
 
 import akka.actor._
-import scala.concurrent.duration._
 
-import actorApi.{ SocketLeave, StartWatching }
+import scala.concurrent.duration._
+import actorApi.{SocketLeave, StartWatching}
 import lila.hub.actorApi.round.MoveEvent
+
+import scala.collection.mutable
 
 private final class MoveBroadcast extends Actor {
 
@@ -34,6 +36,7 @@ private final class MoveBroadcast extends Actor {
           "fen" -> move.fen,
           "lm" -> move.move
         ))
+
         mIds foreach { mId =>
           members get mId foreach (_.member push msg)
         }

@@ -40,6 +40,31 @@ object Event {
       }
     }
 
+  case class Flick(
+                    flick: (List[Int], String, Int),
+                    color: String,
+                    clock: Option[Event]
+                  ) extends Event {
+    def typ = "flick"
+    def data = flick match {
+      case (vel, key, win) => clock match {
+        case Some(_) => Json.obj (
+          "vel" -> vel,
+          "key" -> key,
+          "win" -> win,
+          "color" -> color,
+          "clock" -> clock.map (_.data)
+          )
+        case _ => Json.obj (
+          "vel" -> vel,
+          "key" -> key,
+          "win" -> win,
+          "color" -> color
+        )
+      }
+    }
+  }
+
   object MoveOrDrop {
 
     def data(
