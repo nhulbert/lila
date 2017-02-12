@@ -1,6 +1,6 @@
 [submodule "scalachess"]
 	path = modules/chess
-	url = https://github.com/nhulbert/scalachess.git
+	url = git://github.com/nhulbert/scalachess.git
 [submodule "public/vendor/tagmanager"]
 	path = public/vendor/tagmanager
 	url = https://github.com/max-favilli/tagmanager
