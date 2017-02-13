@@ -9,7 +9,7 @@
 @{(data obj "game") match {
         case Some(a) => (a obj "variant") match {
             case Some(b) => (b str "key") match {
-                case Some("flickChess") => jsAt(s"compiled/lichess.flick${isProd??(".min")}.js")
+                case Some("flickchess") => jsAt(s"compiled/lichess.flick${isProd??(".min")}.js")
                 case _ => jsAt(s"compiled/lichess.round${isProd??(".min")}.js")
             }
             case _ => "error"

@@ -40,7 +40,7 @@ object FilterConfig {
     chess.variant.Horde,
     chess.variant.RacingKings,
     chess.variant.Crazyhouse,
-    chess.variant.KnipseSjakk)
+    chess.variant.FlickChess)
 
   val modes = Mode.all
   val speeds = Speed.all

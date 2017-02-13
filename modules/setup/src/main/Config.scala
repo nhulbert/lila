@@ -110,7 +110,7 @@ trait BaseConfig {
       chess.variant.Atomic.id :+
       chess.variant.Horde.id :+
       chess.variant.RacingKings.id :+
-      chess.variant.KnipseSjakk.id
+      chess.variant.FlickChess.id
   val variantsWithFenAndVariants =
     variantsWithVariants :+ chess.variant.FromPosition.id
 

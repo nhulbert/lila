@@ -7,7 +7,7 @@ var variantConfirms = {
   "horde": "This is a Horde chess game!\n\Black must take all White pawns to win. White must checkmate the Black king.",
   "racingKings": "This is a Racing Kings game!\n\nPlayers must race their kings to the eighth rank. Checks are not allowed.",
   "crazyhouse": "This is a Crazyhouse game!\n\nEvery time a piece is captured, the capturing player gets a piece of the same type and of their color in their pocket.",
-  "flickChess": "This is a Knipse-Sjakk game!\n\nYou flick your pieces at your opponent's pieces, capturing the first enemy piece touched. You win by capturing your opponent's king."
+  "flickChess": "This is a Flick-Chess game!\n\nYou flick your pieces at your opponent's pieces, capturing the first enemy piece touched. You win by capturing your opponent's king."
 };
 
 function storageKey(key) {
